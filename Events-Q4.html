@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4</title>
+    <style>
+        body{
+            background-image: url(tree.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        .p{
+            background-color: yellow;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20 px;
+            justify-content: center;
+            align-items: center;
+        }
+        .p1{
+            background-color: green;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 30px;
+            justify-content: center;
+            align-items: top;
+        }
+        b{
+            color: floralwhite;
+            font-family: 'Roboto', cursive;
+            font-size: 30px;
+        }
+    </style>
+     
+    <script src="https://code.jquery.com/jquery-3.6.4.js" 
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+        
+        $('#display').addClass('p')
+        
+        $("#display").click(function(){
+        var presentClass = $('#display').attr('class');	
+        
+        if(presentClass=='p'){
+            newClass='p1'
+        }else{
+            newClass='p'
+        }
+        
+        $('#display').removeClass(presentClass).addClass(newClass);
+        })
+        
+        })
+        </script>
+</head>
+<body>
+    <b>This is Toggle</b><br><br><br>
+    <center><p  id=display>CLICK HERE!</p></center>
+   
+</body>
+</html>

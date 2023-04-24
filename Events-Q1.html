@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(sunrise.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        #mybtn{
+            font-family: 'Roboto',sans-serif;
+            color: brown;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 70px;
+            margin-left: 600px;
+            margin-top: 300px;
+        }
+        #display{
+            font-family: 'Oswald',sans-serif;
+            font-size: large;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 50px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" 
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#mybtn").click(function(){
+                $("#display").html("Welcome!");
+            })
+
+            })
+
+    </script>
+</head>
+<body>
+    <button id="mybtn">Click Me</button>
+    <span id="display"></span>
+</body>
+</html>

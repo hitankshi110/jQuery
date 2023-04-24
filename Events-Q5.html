@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show-Hide</title>
+    <style>
+        body{
+            background-image: url(tulipfield.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .hide-btn{
+            font-family: 'Roboto',sans-serif;
+            color: brown;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 70px;
+            margin-left: 600px;
+            margin-top: 200px;
+        }
+        .show-btn{
+            font-family: 'Roboto',sans-serif;
+            color: brown;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 70px;
+            margin-left: 700px;
+            margin-top: -50px;
+          
+        }
+        p{
+            font-family: 'Oswald',sans-serif;
+            font-size: large;
+            font-weight: bold;
+            color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+    </style>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.js" 
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+        // Hide displayed paragraphs
+        $(".hide-btn").dblclick(function(){
+            $("p").hide();
+        });
+        
+        // Show hidden paragraphs
+        $(".show-btn").dblclick(function(){
+            $("p").show();
+        });
+    });
+    </script>
+</head>
+<body>
+    <button type="button" class="hide-btn" id="btn">Hide</button> 
+    <button type="button" class="show-btn" id="btn">Show</button>
+    <p>This is first sentence.
+        Hello World! </p>
+      <p>This is second sentence.
+        How are You?
+         
+    </p>
+</body>
+</html>
